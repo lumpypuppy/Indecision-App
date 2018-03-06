@@ -1,0 +1,26 @@
+Section 3, Lecture 9 at around 12 minutes into video, Instructor explains that the commands below are used to make sure that what you do in the src/app.js file will and can be automatically copied into the public/scripts/app.js file. The first command does it one time , whereas the second command keeps doing it automatically every time you save changes, similar to nodemon.
+
+Commands:
+1. Open CLI and from the indecision dir run: live-server public
+
+2. Open another CLI and run: C:\Users\chris.hernandez\Desktop\react-course-projects\indecision-app>babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+change src/app.js
+
+C:\Users\chris.hernandez\Desktop\react-course-projects\indecision-app>babel src/app.js --out-file=public/scripts/app.js --presets=env,react
+
+C:\Users\chris.hernandez\Desktop\react-course-projects\indecision-app>babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+change src/app.js
+
+Section 3, Lecture 11, 4 minutes in: Strings and Numbers when input into the javascript expressions in JSX render exactly as you would expect. 
+
+Section 3, Lecture 12, 9:32 minutes into video. If one of your expressions resolves to 'undefined' nothing shows up.
+
+Section 3, Lecture 12, 11 minutes into video. Becuase a ternary operator is an expression and not a statement it can be executed within the {brackets} of JSX, and is more concise. Very useful for inline conditional statements. example: <h1>{user.name ? user.name : 'Anonymous'}</h1>
+
+Section 3, Lecture 12, 15 minutes into video. Inline If with Logical && Operator
+You may embed any expressions in JSX by wrapping them in curly braces. This includes the JavaScript logical && operator. It can be handy for conditionally including an element:It works because in JavaScript, true && expression always evaluates to expression, and false && expression always evaluates to false.
+Therefore, if the condition is true, the element right after && will appear in the output. If it is false, React will ignore and skip it.(see: https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator)
+
+Section 3, Lecture 12, 16 minutes into video. With logical && Operator it's good if you want to do one thing else nothing. example: {user.age>=18 && <p>Age: {user.age}</p>}
+
+ES6 Functions are always anonymous. 
